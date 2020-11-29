@@ -15,7 +15,7 @@
             display:flex;
             justify-content:space-around;
             padding:2vw;
-            align-items:center;
+            align-content:center;
 		}
 		.ProjectBlock {
             width:40vw;
@@ -73,28 +73,59 @@
 			text-decoration: none;
 			color:white;
 		}
+		.HomeOriginal {
+			color: white;
+			font-size: 1.5em;
+			font-family: 'Lucida Bright';
+			z-index: 1;
+		}
+		.HomeHighlighted {
+			color: #EA658B;
+			font-size: 1.5em;
+			font-family: 'Lucida Bright';
+			z-index: 1;
+		}
+		.HomeLogo {
+			display: flex;
+			justify-content:flex-end;
+			margin-right:5vw;
+			align-items: center;
+		}
+		header {
+			
+			padding: 25px;
+			width:100vw;
+		}
 
 		
     </style>
 </head>
 <body>
-    <div class="mainBlock">
+	<header>
+		<div class="HomeLogo">
+			<img src="Swirl1.png" alt="Swirl1" style="width:100px;height:80px;position:relative;left:20px;z-index:0">
+			<a href="index.html"><h2 class="HomeOriginal" onmouseover="ChangeText(this,'HomeOriginal','HomeHighlighted')" onmouseout="ChangeText(this,'HomeHighlighted','HomeOriginal')">Home</h2></a>
+			<img src="Swirl2.png" alt="Swirl2" style="width:100px;height:80px;position:relative;right:20px;z-index:0">
+		</div>
+	</header>
+	<div class="mainBlock">
+		
 		<div class="imageWindow">
 			<img src="Blog.JPG" id="Picture" class="PictureHidden" />
 		</div>
-        <div class="ProjectBlock">
-            <h1 >Projects</h1>
-            <hr />
+		<div class="ProjectBlock">
+			<h1>Projects</h1>
+			<hr />
 			<p>Click the links below to find out more:</p>
-            <ul>
-                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Blog.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Blog.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/BloggingProject" target="_blank">Blogging App</a></li>
-                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Calculator.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Calculator.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/Calculator" target="_blank">Calculator</a></li>
-                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Radio.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Radio.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/RadioProject" target="_blank">Radio</a></li>
-                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'TournamentScheduler.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','TournamentScheduler.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/UltimateFrisbeeTournamentScheduler" target="_blank">Tournament Scheduler</a></li>
-            </ul>
-        </div>
-       
-    </div>
+			<ul>
+				<li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Blog.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Blog.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/BloggingProject" target="_blank">Blogging App</a></li>
+				<li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Calculator.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Calculator.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/Calculator" target="_blank">Calculator</a></li>
+				<li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Radio.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Radio.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/RadioProject" target="_blank">Radio</a></li>
+				<li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'TournamentScheduler.JPG'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','TournamentScheduler.JPG'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/UltimateFrisbeeTournamentScheduler" target="_blank">Tournament Scheduler</a></li>
+			</ul>
+		</div>
+
+	</div>
 	<script>
 		function ChangePicture(pic, oldStyle, newStyle,imageSource) {
 			pic.src = imageSource;
