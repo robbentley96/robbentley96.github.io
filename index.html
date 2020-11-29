@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rob Bentley's Profile</title>
+    <style>
+		body {
+			background-color: #868686;
+			padding:25px;
+		}
+		header {
+			background-color: #1a1a1a;
+			padding: 25px;
+			border-radius: 5px;
+		}
+		.flex-container {
+			display: flex;
+			justify-content:space-between;
+			align-items: center;
+		}
+		h1 {
+			font-size: 3em;
+			color: #78D233;
+			font-family: 'Lucida Bright';
+		}
+		h3 {
+			color: #9EE965;
+			font-family: 'Lucida Bright';
+			font-size: 1.5em;
+		}
+		.ProjectLogo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.MainBody {
+			background-color: #1a1a1a;
+			border-radius: 5px;
+			padding: 25px;
+			line-height: 1.5;
+		}
+		p {
+			color: white;
+			font-family: Arial;
+			font-size: 1.5em;
+			opacity:0.7;
+		}
+		.Profile {
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+		}
+		#Headshot {
+			width:auto;
+			height:auto;
+			max-width:401px;
+			max-height:364px;
+			margin-left:2vw;
+			border-radius:5px;
+		}
+		h4 {
+			color: #B2E988;
+			font-family: 'Lucida Bright';
+			font-size: 1.5em;
+		}
+		hr {
+			border: 10px solid #78D233;
+			border-radius: 5px;
+		}
+		a {
+			text-decoration: none;
+		}
+		.ProjectsOriginal {
+			color: white;
+			font-size: 1.5em;
+			font-family: 'Lucida Bright';
+			z-index: 1;
+		}
+		.ProjectsHighlighted {
+			color: #EA658B;
+			font-size: 1.5em;
+			font-family: 'Lucida Bright';
+			z-index: 1;
+		}
+		.LinkedInOriginal {
+			width:80px;
+			height:80px;
+			margin:5px;
+		}
+		.LinkedInHighlighted {
+			width: 90px;
+			height: 90px;
+			margin:0;
+		}
+		ul {
+			color: white;
+			justify-items: left;
+			font-size: 1.5em;
+			opacity: 0.7;
+			list-style-type: none;
+			justify-items: left;
+			margin-left: 0;
+			margin-right: 15vw;
+			font-family: Arial;
+		}
+		li {
+			margin-left:20px;
+		}
+		.SkillsAndEducation {
+			border: 5px solid white;
+			line-height: 5ex;
+			height: 80ex;
+			border-radius:5px;
+		}
+
+		
+		
+		
+		
+    </style>
+</head>
+<body>
+	<header>
+		<div class="flex-container">
+			<h1>Rob Bentley</h1>
+			<div class="ProjectLogo">
+				<img src="Swirl1.png" alt="Swirl1" style="width:100px;height:80px;position:relative;left:20px;z-index:0">
+				<a href="ProjectsPage.html" target="_blank"><h2 class="ProjectsOriginal" onmouseover="ChangeStyle(this,'ProjectsOriginal','ProjectsHighlighted')" onmouseout="ChangeStyle(this,'ProjectsHighlighted','ProjectsOriginal')">Projects</h2></a>
+				<img src="Swirl2.png" alt="Swirl2" style="width:100px;height:80px;position:relative;right:20px;z-index:0">
+			</div>
+			<a href="https://www.linkedin.com/in/robertbentley96/" target="_blank"><img src="LinkedInLogo.png" alt="LinkedIn Logo" class="LinkedInOriginal" onmouseover="ChangeStyle(this,'LinkedInOriginal','LinkedInHighlighted')" onmouseout="ChangeStyle(this,'LinkedInHighlighted','LinkedInOriginal')"></a>
+		</div>
+	</header>
+	<br />
+	<div class="MainBody">
+		<div class="Profile">
+			<div>
+				<h3>Profile</h3>
+				<hr />
+				<p>
+					I am a trainee C# developer who is always seeking improvement. 
+					During my 4 years studying Mechanical Engineering at the University of Exeter, I enjoyed expanding my technical knowledge
+					especially with regard to the more modern facets of technology such as machine learning.
+					I’ve had two years of professional experience as an engineer in the subsea oil and gas industry during which I learnt a number of skills
+					but software development and tech is the direction in which I wish to take my career.
+					During this time, having a professional manner was a skill I obtained and I will continue to develop this throughout my career. 
+					I’m eager to further my knowledge and skills as a developer whilst making a positive difference in this increasingly tech-driven world.
+					The value I can bring to a company is in the form of my willingness to learn and the enjoyment I find in problem solving.
+				</p>
+			</div>
+			<img src="Headshot.jpg" id="Headshot" alt="Headshot">
+		</div>
+		<div>
+			<h3>Experience</h3>
+			<hr />
+			<h4>Trainee C# Developer - Sparta Global - (September 2020 - Present)</h4>
+			<p>
+				At Sparta Global, I have received training through the Sparta Academy on the C# stream. This training has covered a variety of topics
+				including professional skills, Git, the basics of C#, Object Oriented Programming, SQL Server Databases, Unit Testing, APIs and Web Development. 
+				My training at Sparta Global has helped me improve my programming skills, especially providing an understanding of the underlying principles. 
+				I look forward to graduating from the academy so that I can apply my skills to real projects.
+			</p>
+			<h4>Subsea Engineer - Peritus International - (November 2018 - September 2020)</h4>
+			<p>
+				My role in this company was of an analytical nature. I used several software packages including
+				Abaqus and Mathcad to analyse subsea oil pipelines for lateral & upheaval buckling, end
+				expansions and thermal properties. My data handling and programming skills increased
+				immensely due to this position. I was part of a team and had to use my initiative to solve complex
+				problems. The role required discipline and adaptability in learning new software and how to
+				apply it to real world engineering problems. As part of this role, I travelled to Jakarta,
+				Indonesia to work on a project which required me to provide technical engineering skills for
+				a client whilst working as part of a team.
+			</p>
+			<h4>Intern - Chemring Energetics - (July 2015 - September 2015)</h4>
+			<p>
+				I completed a project to design modular attachments for pyromechanical actuators which
+				were proposed to Head Office for full developmental funding. This role required the use of
+				the Solid Edge CAD Package to produce 3D models to demonstrate the devices’ functionality.
+			</p>
+		</div>
+		<div class="flex-container" style="justify-content:space-around; align-items:start;">
+			<div>
+				<h3 style="width:40vw;">Skills</h3>
+				<hr />
+				<div class="SkillsAndEducation">
+					<ul>
+						Software:
+						<li>C#</li>
+						<li>HTML & CSS</li>
+						<li>WPF</li>
+						<li>Python</li>
+						<li>TensorFlow</li>
+						<li>Microsoft Office</li>
+					</ul>
+					<ul>
+						Professional:
+						<li>Teamwork</li>
+						<li>Communication</li>
+						<li>Organisated</li>
+						<li>Problem-solver</li>
+						<li>Fast-Learner</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<h3 style="width:40vw;">Education</h3>
+				<hr />
+				<div class="SkillsAndEducation">
+					<ul>
+						2:1 MEng Mechanical Engineering:
+						<li>University of Exeter</li>
+					</ul>
+					<ul>
+						A Levels:
+						<li>Mathematics (<strong>A*</strong>)</li>
+						<li>Further Mathematics (<strong>A</strong>)</li>
+						<li>Physics (<strong>B</strong>)</li>
+						<li>Religious Studies (<strong>C</strong>)</li>
+					</ul>
+					<ul>
+						9 GCSEs including:
+						<li>Mathematics (<strong>A*</strong>)</li>
+						<li>Physics (<strong>A*</strong>)</li>
+						<li>Chemistry (<strong>A</strong>)</li>
+						<li>Biology (<strong>A</strong>)</li>
+						<li>English Literature (<strong>A</strong>)</li>
+						<li>English Language (<strong>A</strong>)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function ChangeStyle(obj, oldStyle, newStyle) {
+			obj.classList.remove(oldStyle);
+			obj.classList.add(newStyle);
+		}
+	</script>
+</body>
+
+</html>

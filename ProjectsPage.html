@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rob Bentley's Projects</title>
+    <style>
+		body {
+            background-image:url('space.jpg')
+		}
+		.mainBlock {
+            height:100vh;
+            width:100vw;
+            background-color:rgba(0,0,0,0.5);
+            display:flex;
+            justify-content:space-around;
+            padding:2vw;
+            align-items:center;
+		}
+		.ProjectBlock {
+            width:40vw;
+            z-index:0;
+		}
+		.imageWindow {
+			height: 50vh;
+			width: 80vh;
+		}
+		h1 {
+			font-size: 3em;
+			font-family: 'Lucida Bright';
+            color:white;
+		}
+		hr {
+			border: 5px solid white;
+			border-radius: 5px;
+		}
+		ul {
+			color: white;
+			justify-items: left;
+			font-size: 1.5em;
+			list-style-type: none;
+			font-family: Arial;
+		}
+		.textUnhighlighted {
+			opacity: 0.7;
+			font-size: 1.5em;
+			line-height: 3ex;
+		}
+		.textHighlighted {
+			opacity: 1;
+			font-size: 1.7em;
+			line-height: 3ex;
+		}
+		.PictureHidden {
+			visibility: hidden;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		.PictureVisible {
+			visibility: visible;
+			width: 100%;
+			height: 100%;
+			border-radius:5px;
+		}
+		p {
+			color: white;
+			justify-items: left;
+			font-size: 1.5em;
+			font-family: Arial;
+		}
+		a {
+			text-decoration: none;
+			color:white;
+		}
+
+		
+    </style>
+</head>
+<body>
+    <div class="mainBlock">
+		<div class="imageWindow">
+			<img src="Blog.jpg" id="Picture" class="PictureHidden" />
+		</div>
+        <div class="ProjectBlock">
+            <h1 >Projects</h1>
+            <hr />
+			<p>Click the links below to find out more:</p>
+            <ul>
+                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Blog.jpg'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Blog.jpg'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/BloggingProject" target="_blank">Blogging App</a></li>
+                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Calculator.jpg'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Calculator.jpg'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/Calculator" target="_blank">Calculator</a></li>
+                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'Radio.jpg'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','Radio.jpg'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/RadioProject" target="_blank">Radio</a></li>
+                <li class="textUnhighlighted" onmouseover="ChangePicture(document.getElementById('Picture'), 'PictureHidden', 'PictureVisible', 'TournamentScheduler.jpg'); ChangeText(this, 'textUnhighlighted', 'textHighlighted');" onmouseout="ChangePicture(document.getElementById('Picture'), 'PictureVisible', 'PictureHidden','TournamentScheduler.jpg'); ChangeText(this, 'textHighlighted', 'textUnhighlighted');"><a href="https://github.com/robbentley96/UltimateFrisbeeTournamentScheduler" target="_blank">Tournament Scheduler</a></li>
+            </ul>
+        </div>
+       
+    </div>
+	<script>
+		function ChangePicture(pic, oldStyle, newStyle,imageSource) {
+			pic.src = imageSource;
+			pic.classList.remove(oldStyle);
+			pic.classList.add(newStyle);
+		}
+		function ChangeText(text, oldStyle, newStyle) {
+			text.classList.remove(oldStyle);
+			text.classList.add(newStyle);
+		}
+	</script>
+</body>
+</html>
